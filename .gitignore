@@ -44,4 +44,4 @@ target/
 *.log
 
 # Optional: don't share DB credentials
-src/main/resources/application.properties
+#src/main/resources/application.properties
