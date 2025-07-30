@@ -45,3 +45,4 @@ target/
 
 # Optional: don't share DB credentials
 #src/main/resources/application.properties
+
