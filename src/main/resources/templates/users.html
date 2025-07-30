@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head><title>All Users</title></head>
+<head>
+    <title>User List</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
 <body>
 <h1>User List</h1>
-<a href="/add">Add New User</a>
+<a href="/add"><button>Add New User</button></a>
 <ul>
     <li th:each="user : ${users}">
-        <span th:text="${user.name}"></span> -
+        <strong th:text="${user.name}"></strong> –
         <span th:text="${user.email}"></span>
     </li>
 </ul>

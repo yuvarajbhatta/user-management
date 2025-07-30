@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head><title>Add User</title></head>
+<head>
+    <title>Add User</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
 <body>
 <h1>Add User</h1>
 <form action="/add" method="post" th:object="${user}">
