@@ -1,7 +1,7 @@
-package com.example.usermanagement.controller;
+package com.example.coursemanagement.controller;
 
-import com.example.usermanagement.model.User;
-import com.example.usermanagement.service.UserService;
+import com.example.coursemanagement.model.User;
+import com.example.coursemanagement.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -24,7 +24,7 @@ public class UserController {
     @GetMapping("/add")
     public String showAddForm(Model model) {
         model.addAttribute("user", new User());
-        return "add-user";
+        return "add-course";
     }
 
     @PostMapping("/add")
