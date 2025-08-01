@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Courses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h2 class="mb-4">My Enrollments</h2>
+
+    <table class="table table-bordered">
+        <thead class="table-light">
+        <tr th:each="enrollment : ${enrollments}">
+            <td th:text="${enrollment.course.title}">Course Title</td>
+        </tr>
+        </thead>
+    </table>
+
+    <a href="/dashboard" class="btn btn-secondary mt-3">Back to Dashboard</a>
+</div>
+</body>
+</html>
